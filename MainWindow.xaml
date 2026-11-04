@@ -1,0 +1,123 @@
+﻿
+<Window x:Class="Pr0nBlocker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Pr0n Blocker"
+        Height="550"
+        Width="850"
+        WindowStartupLocation="CenterScreen"
+        Background="#111827">
+
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,30">
+            <TextBlock Text="PR0N BLOCKER"
+                       FontSize="26"
+                       FontWeight="Bold"
+                       Foreground="White"/>
+
+            <TextBlock Text="Personal protection system"
+                       FontSize="14"
+                       Foreground="#9CA3AF"
+                       Margin="0,5,0,0"/>
+        </StackPanel>
+
+        <Border Grid.Row="1"
+                Background="#1F2937"
+                CornerRadius="12"
+                Padding="20"
+                Margin="0,0,0,20">
+
+            <StackPanel>
+                <TextBlock Text="PROTECTION STATUS"
+                           FontSize="12"
+                           FontWeight="Bold"
+                           Foreground="#9CA3AF"/>
+
+                <TextBlock x:Name="ProtectionStatus"
+                           Text="NOT ACTIVE"
+                           FontSize="24"
+                           FontWeight="Bold"
+                           Foreground="#F87171"
+                           Margin="0,8,0,0"/>
+
+                <TextBlock Text="DNS filtering has not been configured yet."
+                           FontSize="14"
+                           Foreground="#D1D5DB"
+                           Margin="0,5,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0"
+                    Background="#1F2937"
+                    CornerRadius="12"
+                    Padding="20"
+                    Margin="0,0,10,0">
+
+                <StackPanel>
+                    <TextBlock Text="DNS FILTER"
+                               FontSize="12"
+                               FontWeight="Bold"
+                               Foreground="#9CA3AF"/>
+
+                    <TextBlock Text="Not configured"
+                               FontSize="18"
+                               FontWeight="SemiBold"
+                               Foreground="White"
+                               Margin="0,12,0,0"/>
+
+                    <TextBlock Text="The application is not filtering domains yet."
+                               FontSize="14"
+                               Foreground="#D1D5DB"
+                               TextWrapping="Wrap"
+                               Margin="0,8,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1"
+                    Background="#1F2937"
+                    CornerRadius="12"
+                    Padding="20"
+                    Margin="10,0,0,0">
+
+                <StackPanel>
+                    <TextBlock Text="BLOCKLIST"
+                               FontSize="12"
+                               FontWeight="Bold"
+                               Foreground="#9CA3AF"/>
+
+                    <TextBlock x:Name="BlocklistStatus"
+                               Text="Not loaded"
+                               FontSize="18"
+                               FontWeight="SemiBold"
+                               Foreground="White"
+                               Margin="0,12,0,0"/>
+
+                    <TextBlock x:Name="DomainCount"
+                               Text="0 domains loaded"
+                               FontSize="14"
+                               Foreground="#D1D5DB"
+                               Margin="0,8,0,0"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <TextBlock Grid.Row="3"
+                   Text="Version 0.1.0 | Local protection"
+                   FontSize="12"
+                   Foreground="#6B7280"
+                   Margin="0,20,0,0"/>
+    </Grid>
+</Window>
