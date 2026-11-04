@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Pr0nBlocker
+namespace Blocker
 {
     public class BlocklistManager
     {

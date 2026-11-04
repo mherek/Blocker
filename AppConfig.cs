@@ -1,4 +1,4 @@
-namespace Pr0nBlocker
+namespace Blocker
 {
     public class AppConfig
     {

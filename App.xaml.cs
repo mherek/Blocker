@@ -1,8 +1,8 @@
-﻿using System.Configuration;
+using System.Configuration;
 using System.Data;
 using System.Windows;
 
-namespace Pr0nBlocker;
+namespace Blocker;
 
 /// <summary>
 /// Interaction logic for App.xaml

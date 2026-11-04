@@ -2,11 +2,14 @@ using System;
 using System.IO;
 using System.Text.Json;
 
-namespace Pr0nBlocker
+namespace Blocker
 {
     public class ConfigManager
     {
-        private readonly string configPath = "config.json";
+    private readonly string configPath = Path.Combine(
+    AppDomain.CurrentDomain.BaseDirectory,
+    "config.json"
+);
 
         public AppConfig Load()
         {

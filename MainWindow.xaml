@@ -1,5 +1,5 @@
-﻿
-<Window x:Class="Pr0nBlocker.MainWindow"
+
+<Window x:Class="Blocker.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Pr0n Blocker"
