@@ -13,3 +13,6 @@ obj/
 # Windows files
 Thumbs.db
 .DS_Store
+
+# Browser metadata files
+BrowserExtension/_metadata/

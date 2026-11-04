@@ -2,7 +2,7 @@ namespace Blocker
 {
     public class AppConfig
     {
-        public string AppName { get; set; } = "Pr0n Blocker";
+        public string AppName { get; set; } = "Blocker";
 
         public string Version { get; set; } = "0.1.0";
 

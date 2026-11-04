@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Blocker",
+  "version": "0.1.0",
+  "description": "Personal content blocking extension",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
