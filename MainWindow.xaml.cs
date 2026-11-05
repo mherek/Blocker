@@ -27,7 +27,7 @@ namespace Blocker
             // The text file is the source of truth for the domain list.
             RefreshDomainList();
 
-            if (appConfig.ProtectionEnabled)
+            if (appConfig.ProtectionEnabled && blocklistManager.GetDomainCount() > 0)
             {
                 try
                 {
@@ -50,6 +50,8 @@ namespace Blocker
             }
             else
             {
+                appConfig.ProtectionEnabled = false;
+                configManager.Save(appConfig);
                 UpdateProtectionInterface(false);
             }
         }
